@@ -20,7 +20,7 @@ def imprimir_tablero(tablero):
 
 
 cont="S"
-while True and cont=="S":
+while cont=="S":
     print()
     print("Generador de tablero aleatorio")
     print("Opciones:")
@@ -45,7 +45,7 @@ while True and cont=="S":
         cont=cont.upper()
         if cont!="S": # Si la decision es NO o se ingresa otra letra distina a S, se detiene el programa
             print("Saliendo del programa ... ")
-            break
+            
 
     elif opcion == "2": # Se genera un tablero perzonalizado (dimensiones y caracteres)
 
@@ -63,10 +63,13 @@ while True and cont=="S":
         cont=cont.upper()
         if cont!="S": # Si la decision es NO o se ingresa otra letra distina a S, se detiene el programa
             print("Saliendo del programa ... ")
-            break
+           
 
     elif opcion == "3":
         print("Saliendo del programa ... ")
+        cont="x"
+    else:
+        print("Opción inválida. Por favor, ingrese un número válido.")
         break # Salir del ciclo while
     else:
         print("Opción inválida. Por favor, ingrese un número válido.")
