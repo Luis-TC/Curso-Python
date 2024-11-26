@@ -95,4 +95,3 @@ elif opcion == "2":
     continuar="x"
 else:
         print("Opción inválida. Por favor, ingrese un número válido.")
-        

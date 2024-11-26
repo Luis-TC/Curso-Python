@@ -35,8 +35,6 @@ def ganador(rta_U, rta_C):
     
     return resultado
 
-    
-
 puntos_usuario = 0
 puntos_computadora = 0
 
@@ -79,4 +77,3 @@ elif opcion == "2":
     continuar="x"
 else:
         print("Opción inválida. Por favor, ingrese un número válido.")
-        

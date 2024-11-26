@@ -5,7 +5,6 @@ import random
 opciones = ["piedra","agua","aire","papel","esponja","tijera","fuego"]
 
 #Casos para ganar
-
 reglas = {
     "piedra": ["tijera", "esponja", "fuego"],
     "papel": ["piedra", "agua", "aire"],
@@ -88,4 +87,3 @@ elif opcion == "2":
     continuar="x"
 else:
         print("Opción inválida. Por favor, ingrese un número válido.")
-        
