@@ -57,19 +57,19 @@ puntos_usuario = 0
 puntos_computadora = 0
 
 #Menu imprimible inicial
+while True:
 
-print("\nJuego 7 Elementos")
-print("Opciones:")
-print("1. Jugar")
-print("2. Salir")
+    print("\nJuego 7 Elementos")
+    print("Opciones:")
+    print("1. Jugar")
+    print("2. Limpiar marcador")
+    print("3. Salir")
 
     # Solicitar al usuario que ingrese una opción
-opcion = input("Selecciona una opción: ")
+    opcion = input("Selecciona una opción: ")
 
     # Procesar la opción seleccionada
-if opcion == "1": #Pregunta respuesta de usuario e imprime respuestas
-    continuar="S"
-    while continuar=="S":
+    if opcion == "1": #Pregunta respuesta de usuario e imprime respuestas
 
         rta_U=Rta_Usuario()
         rta_C=Rta_Computadora()
@@ -85,13 +85,17 @@ if opcion == "1": #Pregunta respuesta de usuario e imprime respuestas
         print(f"Tú: {puntos_usuario}")
         print(f"Computadora: {puntos_computadora}")
 
-        continuar=input("\nSeguir Jugando?: (S/N) ") # Solicita al usuario si desea continuar jugando
-        continuar=continuar.upper()
-        if continuar!="S": # Si la decision es NO o se ingresa otra letra distina a S, se detiene el programa
-            print("Saliendo del programa ... ")
-            break
-elif opcion == "2":
-    print("Saliendo del programa ... ")
-    continuar="x"
-else:
+    elif opcion == "2":
+        print("\n --Marcador limpiado--")
+        puntos_usuario = 0
+        puntos_computadora = 0
+                # Mostrar marcador
+        print("Marcador:")
+        print(f"Tú: {puntos_usuario}")
+        print(f"Computadora: {puntos_computadora}")
+
+    elif opcion == "3":
+        print("Saliendo del programa ... ")
+        break
+    else:
         print("Opción inválida. Por favor, ingrese un número válido.")
